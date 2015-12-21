@@ -1,0 +1,36 @@
+// Put any @imports here
+// See Readme for a list of supported ones
+@import 'font-awesome';
+
+body {
+  background: white;
+  font: italic 2em sans-serif;
+  color: white;
+  // color: #452B1F;
+}
+
+.wrapper {
+
+  margin: 0 auto;
+
+  .head {
+    color: black;
+    background-color: #F5F5F5;
+  }
+
+  .work {
+    background-color: #FD9498;
+  }
+
+  .about {
+    background-color: #85DAC6;
+  }
+
+  .skills {
+    background-color: #F8BA66;
+  }
+
+  .contact {
+    background-color: #1EB1F2;
+  }
+}
