@@ -2083,18 +2083,62 @@ body {
   font: italic 2em sans-serif;
   color: white; }
 
+.left {
+  width: 25%; }
+
+.right {
+  width: 75%; }
+
 .wrapper {
-  margin: 0 auto; }
+  margin: 20px 20px; }
   .wrapper .head {
     color: black;
-    background-color: #F5F5F5; }
+    background-color: #F5F5F5;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .wrapper .head h2 {
+      margin: 10px 0; }
+    .wrapper .head p {
+      margin: 5px 0; }
+    .wrapper .head small {
+      padding-bottom: 20px; }
   .wrapper .work {
-    background-color: #FD9498; }
-  .wrapper .about {
-    background-color: #85DAC6; }
+    margin-top: 20px;
+    display: flex; }
+    .wrapper .work .left {
+      background-color: #FD9498;
+      margin-right: 10px; }
+      .wrapper .work .left h2 {
+        float: right;
+        padding-right: 20px; }
+    .wrapper .work .right {
+      background-color: #FFB3B5;
+      margin-left: 10px; }
+      .wrapper .work .right img {
+        width: 45%;
+        margin: 10px 10px; }
   .wrapper .skills {
-    background-color: #F8BA66; }
+    display: flex;
+    margin-top: 20px; }
+    .wrapper .skills .left {
+      background-color: #FBD191;
+      margin-right: 10px;
+      width: 75%; }
+    .wrapper .skills .right {
+      background-color: #F8BA66;
+      margin-left: 10px;
+      width: 25%; }
+  .wrapper .about {
+    display: flex;
+    background-color: #85DAC6;
+    margin-top: 20px; }
+    .wrapper .about .left {
+      background-color: #A7E5D7; }
   .wrapper .contact {
-    background-color: #1EB1F2; }
+    display: flex;
+    background-color: #1EB1F2;
+    margin-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */

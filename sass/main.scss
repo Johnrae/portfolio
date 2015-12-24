@@ -9,28 +9,87 @@ body {
   // color: #452B1F;
 }
 
+.left{
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
 .wrapper {
 
-  margin: 0 auto;
+  margin: 20px 20px;
 
   .head {
     color: black;
     background-color: #F5F5F5;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      margin: 10px 0;
+    }
+    p {
+      margin: 5px 0;
+    }
+    small {
+      padding-bottom: 20px;
+    }
   }
 
   .work {
-    background-color: #FD9498;
-  }
-
-  .about {
-    background-color: #85DAC6;
+    margin-top: 20px;
+    display: flex;
+    .left {
+      background-color: #FD9498;  
+      margin-right: 10px;
+      h2 {
+        float: right;
+        padding-right: 20px;
+      }
+    }
+    .right {
+      background-color: #FFB3B5;
+      margin-left: 10px;
+      img {
+        width: 45%;
+        margin: 10px 10px;
+      }
+    }
   }
 
   .skills {
-    background-color: #F8BA66;
+    display: flex;
+    margin-top: 20px;
+    .left {
+      background-color: #FBD191;
+      margin-right: 10px;
+      width: 75%;
+    }
+    .right{
+      background-color: #F8BA66;
+      margin-left: 10px;
+      width: 25%
+    }
+  }
+
+  .about {
+    display: flex;
+    background-color: #85DAC6;
+    margin-top: 20px;
+    .left {
+      background-color: #A7E5D7;
+    }
+    .right {
+
+    }
   }
 
   .contact {
+    display: flex;
     background-color: #1EB1F2;
+    margin-top: 20px;
   }
 }
