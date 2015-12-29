@@ -24,12 +24,13 @@ body {
   .head {
     color: black;
     background-color: #F5F5F5;
-    margin-top: 10px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
     h2 {
       margin: 10px 0;
+      font-size: 2em;
     }
     p {
       margin: 5px 0;
@@ -37,25 +38,49 @@ body {
     small {
       padding-bottom: 20px;
     }
+    .links {
+      padding-bottom: 20px;
+      font-size: 2em;
+      a{
+        color: black;
+        &:hover{
+          opacity: 0.5;
+        }
+      }
+    }
   }
 
   .work {
     margin-top: 20px;
     display: flex;
-    .left {
+    .right {
       background-color: #FD9498;  
-      margin-right: 10px;
+      margin-left: 10px;
+      width: 25%;
       h2 {
-        float: right;
-        padding-right: 20px;
+        padding-left: 50px;
       }
     }
-    .right {
+    .left {
+      display: flex;
       background-color: #FFB3B5;
-      margin-left: 10px;
-      img {
-        width: 45%;
-        margin: 10px 10px;
+      margin-right: 10px;
+      width: 75%;
+      .image{
+        overflow: hidden;
+        background: #000;
+        margin: 20px 20px;
+        a{
+          background: transparent;
+        }
+        img {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+          &:hover {
+            opacity: 0.2;
+          }
+        }
       }
     }
   }
@@ -64,32 +89,55 @@ body {
     display: flex;
     margin-top: 20px;
     .left {
-      background-color: #FBD191;
+      background-color: #F8BA66;
       margin-right: 10px;
-      width: 75%;
+      h2 {
+        float: right;
+        padding-right: 50px;
+      }
     }
     .right{
-      background-color: #F8BA66;
+      background-color: #FBD191;
       margin-left: 10px;
-      width: 25%
     }
   }
 
   .about {
     display: flex;
-    background-color: #85DAC6;
     margin-top: 20px;
     .left {
       background-color: #A7E5D7;
+      width: 75%; 
+      margin-right: 10px;
+      .text {
+        padding: 20px;
+      }
     }
     .right {
-
+      background-color: #85DAC6;
+      width: 25%;
+      margin-left: 10px;
+      h2 {
+        padding-left: 50px;
+      }
     }
   }
 
   .contact {
     display: flex;
-    background-color: #1EB1F2;
+    // background-color: #1EB1F2;
     margin-top: 20px;
+    .left {      
+      background-image: url(../images/blue.jpg);
+      margin-right: 10px;
+      h2 {
+        float: right;
+        padding-right: 50px;
+      }
+    }
+    .right {
+      background-color: #1EB1F2;
+      margin-left: 10px;
+    }
   }
 }
