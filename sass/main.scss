@@ -4,7 +4,7 @@
 
 body {
   background: white;
-  font: italic 2em sans-serif;
+  font: normal 2em sans-serif;
   color: white;
   // color: #452B1F;
 }
@@ -32,6 +32,12 @@ body {
       margin: 10px 0;
       font-size: 2em;
     }
+    nav {
+      a {
+        text-decoration: none;
+        color: #57C7FA;
+      }
+    }
     p {
       margin: 5px 0;
     }
@@ -40,7 +46,7 @@ body {
     }
     .links {
       padding-bottom: 20px;
-      font-size: 2em;
+      font-size: 1.5em;
       a{
         color: black;
         &:hover{
@@ -66,7 +72,7 @@ body {
       background-color: #FFB3B5;
       margin-right: 10px;
       width: 75%;
-      .image{
+      .work-block{
         overflow: hidden;
         background: #000;
         margin: 20px 20px;
@@ -128,7 +134,7 @@ body {
     // background-color: #1EB1F2;
     margin-top: 20px;
     .left {      
-      background-image: url(../images/blue.jpg);
+      background-color: #1EB1F2;
       margin-right: 10px;
       h2 {
         float: right;
@@ -136,7 +142,7 @@ body {
       }
     }
     .right {
-      background-color: #1EB1F2;
+      background-color: #5DC8F8;
       margin-left: 10px;
     }
   }
