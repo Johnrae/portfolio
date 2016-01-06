@@ -2080,7 +2080,7 @@
 
 body {
   background: white;
-  font: normal 2em sans-serif;
+  font: normal 1.5em sans-serif;
   color: white; }
 
 .left {
@@ -2132,15 +2132,33 @@ body {
       .wrapper .work .left .work-block {
         overflow: hidden;
         background: #000;
-        margin: 20px 20px; }
-        .wrapper .work .left .work-block a {
-          background: transparent; }
+        margin: 20px 20px;
+        position: relative; }
+        .wrapper .work .left .work-block .inner {
+          display: none; }
+        .wrapper .work .left .work-block:hover .inner {
+          display: block;
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          bottom: 5%;
+          left: 5%;
+          z-index: 100; }
+          .wrapper .work .left .work-block:hover .inner .buttons {
+            text-align: center; }
+            .wrapper .work .left .work-block:hover .inner .buttons button {
+              padding: 10px;
+              margin-right: 15px;
+              color: white;
+              background-color: transparent;
+              border-radius: 5px;
+              border: 2px solid white; }
+        .wrapper .work .left .work-block:hover img {
+          opacity: 0.2; }
         .wrapper .work .left .work-block img {
           background-color: white;
           width: 100%;
           height: 100%; }
-          .wrapper .work .left .work-block img:hover {
-            opacity: 0.2; }
   .wrapper .skills {
     display: flex;
     margin-top: 20px; }
