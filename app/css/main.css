@@ -2157,8 +2157,11 @@ body {
               margin-right: 15px;
               color: white;
               background-color: transparent;
-              border-radius: 5px;
               border: 2px solid white; }
+              .wrapper .work .left .work-block:hover .inner .buttons button:hover {
+                background-color: white;
+                color: black;
+                transition: all 0.2s ease; }
         .wrapper .work .left .work-block:hover img {
           opacity: 0.2; }
         .wrapper .work .left .work-block img {
